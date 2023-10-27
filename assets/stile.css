@@ -171,11 +171,10 @@ main {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.512);
 }
-main > hr {
-  width: 60vw;
-}
+
 main > hr {
   margin-block: 3rem;
+  width: 60vw;
 }
 .article-section {
   display: flex;
