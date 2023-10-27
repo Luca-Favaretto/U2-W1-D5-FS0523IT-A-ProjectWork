@@ -233,6 +233,8 @@ main > hr {
   flex-direction: column;
   width: 40%;
   padding-inline: 3rem;
+  position: sticky;
+  top: 51px;
 }
 .conteiner-button {
   margin-top: 1rem;
@@ -256,24 +258,31 @@ main > hr {
   margin-right: 12px;
   color: rgba(0, 0, 0, 0.508);
   font-weight: 400;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 992px) {
   header div {
     display: none;
   }
 }
+@media screen and (max-width: 650px) {
+  nav ul li {
+    display: none;
+  }
+}
 @media screen and (max-width: 576px) {
   .article-section {
     flex-direction: column-reverse;
-    .articles-conteiner {
-      width: 100%;
-    }
+  }
+  .subjects {
+    width: 100%;
+    position: static;
+  }
 
-    .subjects {
-      .tred-section {
-        justify-content: flex-start;
-        width: 100%;
-      }
-    }
+  .tred-section {
+    justify-content: flex-start;
+  }
+  .articles-conteiner {
+    width: 100%;
   }
 }
