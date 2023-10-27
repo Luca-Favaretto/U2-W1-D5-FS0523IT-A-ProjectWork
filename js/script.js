@@ -4,7 +4,7 @@ window.addEventListener("scroll", function () {
   const nav = document.getElementsByTagName("nav")[0];
   const btnNav = document.querySelector("nav button");
 
-  if (verticalScroll > 350) {
+  if (verticalScroll > 320) {
     contNav.classList.add("white");
     nav.classList.add("white");
     btnNav.classList.add("green");
