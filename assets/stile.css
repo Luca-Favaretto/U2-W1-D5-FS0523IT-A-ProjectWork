@@ -267,6 +267,12 @@ main > hr {
   header div {
     display: none;
   }
+  header h1 {
+    font-size: 4rem;
+  }
+  header h2 {
+    font-size: 1rem;
+  }
   .article-section {
     flex-direction: column-reverse;
   }
@@ -286,6 +292,9 @@ main > hr {
 @media screen and (max-width: 680px) {
   nav ul li {
     display: none;
+  }
+  header h1 {
+    font-size: 3rem;
   }
   .article-div-img {
     width: 250px;
