@@ -14,3 +14,8 @@ window.addEventListener("scroll", function () {
     btnNav.classList.remove("green");
   }
 });
+const mMm = document.getElementById("div-svg");
+
+mMm.getAttribute;
+
+console.log(mMm);
