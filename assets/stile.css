@@ -81,7 +81,7 @@ header div {
   flex-shrink: 0;
   position: absolute;
   right: 0;
-
+  height: 100%;
   top: 0;
 }
 .section-title {
@@ -131,6 +131,7 @@ main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 .trend-conteiner {
   width: 300px;
@@ -153,6 +154,7 @@ main {
 
 .zone-avater img {
   border-radius: 50px;
+  width: 1.5rem;
 }
 .trend-producer {
   color: black;
@@ -161,7 +163,7 @@ main {
 }
 .trend-document {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: black;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -174,7 +176,7 @@ main {
 
 main > hr {
   margin-block: 3rem;
-  width: 60vw;
+  width: 100vw;
 }
 .article-section {
   display: flex;
@@ -182,7 +184,8 @@ main > hr {
 .articles-conteiner {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  align-items: flex-start;
+  max-width: 70%;
   gap: 3rem;
 }
 .article {
@@ -192,10 +195,10 @@ main > hr {
 .article-producer {
   color: black;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .article-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   color: black;
 }
@@ -219,8 +222,8 @@ main > hr {
 }
 
 .article-div-img {
-  width: 600px;
-  height: 200px;
+  width: 500px;
+  height: 180px;
   overflow: hidden;
 }
 .article-div-img > img {
@@ -230,8 +233,9 @@ main > hr {
 .subjects {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  max-width: 40%;
   padding-inline: 3rem;
+
   position: sticky;
   top: 51px;
 }
@@ -263,25 +267,35 @@ main > hr {
   header div {
     display: none;
   }
-}
-@media screen and (max-width: 650px) {
-  nav ul li {
-    display: none;
-  }
-}
-@media screen and (max-width: 576px) {
   .article-section {
     flex-direction: column-reverse;
   }
   .subjects {
-    width: 100%;
+    max-width: unset;
     position: static;
+    margin-bottom: 2rem;
   }
 
   .tred-section {
     justify-content: flex-start;
   }
   .articles-conteiner {
-    width: 100%;
+    max-width: unset;
   }
+}
+@media screen and (max-width: 680px) {
+  nav ul li {
+    display: none;
+  }
+  .article-div-img {
+    width: 250px;
+  }
+  .article-div-img img {
+    object-fit: cover;
+    vertical-align: middle;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
 }
