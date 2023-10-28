@@ -14,8 +14,20 @@ window.addEventListener("scroll", function () {
     btnNav.classList.remove("green");
   }
 });
-const mMm = document.getElementById("div-svg");
 
-mMm.getAttribute;
+// const randNum2 = Math.floor(Math.random() * 231) + 2;
 
-console.log(mMm);
+// const matrice = mMm[randNum].getAttribute("transform");
+
+const changeM = function () {
+  const mMm = Array.from(document.getElementsByTagName("g"));
+  const randNum = Math.floor(Math.random() * 1956) + 2;
+
+  let opacity = mMm[randNum].getAttribute("opacity");
+  if (opacity === "0") {
+    mMm[randNum].setAttribute("opacity", "1");
+  } else {
+    mMm[randNum].setAttribute("opacity", "0");
+  }
+};
+const intervallo = setInterval(changeM, 50);
