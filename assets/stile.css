@@ -132,6 +132,7 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 1rem;
 }
 .trend-conteiner {
   width: 300px;
@@ -291,7 +292,9 @@ main > hr {
   }
 }
 @media screen and (max-width: 680px) {
-  nav ul li {
+  nav ul li:nth-child(1),
+  nav ul li:nth-child(2),
+  nav ul li:nth-child(3) {
     display: none;
   }
   header h1 {
@@ -308,4 +311,7 @@ main > hr {
 }
 
 @media screen and (max-width: 576px) {
+  nav ul li:nth-child(4) {
+    display: none;
+  }
 }
