@@ -30,4 +30,4 @@ const changeM = function () {
     mMm[randNum].setAttribute("opacity", "0");
   }
 };
-const intervallo = setInterval(changeM, 50);
+const intervallo = setInterval(changeM, 1);
