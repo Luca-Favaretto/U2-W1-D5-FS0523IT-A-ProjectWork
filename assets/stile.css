@@ -113,7 +113,7 @@ main {
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+
   margin-inline: auto;
 }
 
@@ -146,6 +146,9 @@ main {
   color: rgba(0, 0, 0, 0.141);
 }
 
+hr {
+  width: 100%;
+}
 .zone-avater {
   display: flex;
   align-items: center;
@@ -175,10 +178,6 @@ main {
   color: rgba(0, 0, 0, 0.512);
 }
 
-main > hr {
-  margin-block: 3rem;
-  width: 100vw;
-}
 .article-section {
   display: flex;
   align-items: flex-start;
@@ -236,8 +235,6 @@ main > hr {
   display: flex;
   flex-direction: column;
   max-width: 40%;
-  padding-inline: 3rem;
-
   position: sticky;
   top: 80px;
 }
