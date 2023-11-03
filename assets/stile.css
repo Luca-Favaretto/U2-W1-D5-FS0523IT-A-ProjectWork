@@ -9,7 +9,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container {
-  width: 1000px;
+  max-width: 1000px;
   margin-inline: auto;
 }
 .container-nav {
@@ -181,6 +181,8 @@ hr {
 .article-section {
   display: flex;
   align-items: flex-start;
+  gap: 2rem;
+  margin-top: 1rem;
 }
 .articles-conteiner {
   display: flex;
